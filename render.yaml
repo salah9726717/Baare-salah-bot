@@ -1,0 +1,23 @@
+services:
+  - type: worker
+    name: baare-salah-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: GROUP_CHAT_ID
+        value: "-1004323741842"
+      - key: STORAGE_CHANNEL_ID
+        value: "-1004381852755"
+      - key: DATABASE_URL
+        sync: false
+      - key: PGSSL
+        value: "true"
+      - key: BOT_USERNAME
+        value: "BaareSalahBot"
+      - key: SUPPORT_USERNAME
+        value: "Baare_Salah"
