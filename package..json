@@ -1,0 +1,9 @@
+{
+  "name": "baare-salah-bot",
+  "version": "1.0.0",
+  "description": "Baare Salah Telegram search bot with PostgreSQL indexing for one storage channel",
+  "main": "src/index.js",
+  "scripts": {"start": "node src/index.js", "check": "node --check src/index.js && node --check src/db.js && node --check src/captions.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {"dotenv": "^16.4.7", "pg": "^8.13.1", "telegraf": "^4.16.3"}
+}
